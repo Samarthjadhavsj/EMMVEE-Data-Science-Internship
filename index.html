@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Analytics - Emmvee Solar Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#profile" class="nav-link">Profile</a>
+            <a href="#data" class="nav-link">Data</a>
+            <a href="#analysis" class="nav-link">Analysis</a>
+            <a href="#insights" class="nav-link">Insights</a>
+            <a href="#prediction" class="nav-link">Prediction</a>
+            <a href="#summary" class="nav-link">Summary</a>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile" class="section">
+        <div class="container">
+            <h1 class="section-title">Intelligent Solar Energy Analytics & Prediction System</h1>
+            <div class="profile-card">
+                <div class="profile-row">
+                    <span class="profile-label">Role</span>
+                    <span class="profile-value">Data Science Intern</span>
+                </div>
+                <div class="profile-row">
+                    <span class="profile-label">Organization</span>
+                    <span class="profile-value">Emmvee Solar Systems Pvt. Ltd.</span>
+                </div>
+            </div>
+            
+            <div class="data-card">
+                <h3 class="card-title">Project Overview</h3>
+                <p class="card-text">This project focuses on building a structured analytics system to understand weather and environmental conditions relevant to solar energy availability. The objective is to transform time-series environmental data into meaningful insights through systematic analysis and visualization.</p>
+            </div>
+            
+            <div class="data-card">
+                <h3 class="card-title">Data Description</h3>
+                <p class="card-text">The project utilizes industry-representative weather and environmental data designed to reflect real-world solar operating conditions. The dataset supports temporal analysis, seasonal trend identification, and environmental impact assessment.</p>
+            </div>
+            
+            <div class="scope-grid">
+                <div class="scope-card">
+                    <h3 class="card-title">Scope of Work</h3>
+                    <ul class="scope-list">
+                        <li>Analysis of weather and environmental parameters</li>
+                        <li>Identification of temporal and seasonal patterns</li>
+                        <li>Dashboard-based visualization for analytical insights</li>
+                    </ul>
+                </div>
+                <div class="scope-card out-of-scope">
+                    <h3 class="card-title">Out of Scope</h3>
+                    <ul class="scope-list">
+                        <li>Predictive modeling</li>
+                        <li>Machine learning implementation</li>
+                        <li>Optimization and deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Section -->
+    <section id="data" class="section gray-section">
+        <div class="container">
+            <h2 class="section-title">Dataset Overview</h2>
+            <div class="data-card">
+                <h3 class="card-title">Data Description</h3>
+                <p class="card-text">Weather and environmental data collected for solar energy analytics. Dataset includes hourly measurements of key weather parameters affecting solar power generation.</p>
+            </div>
+            <div class="data-grid">
+                <div class="data-card">
+                    <h3 class="card-title">Time Span</h3>
+                    <p class="card-value">3 Years</p>
+                    <p class="card-subtitle">2021-01-01 to 2023-12-31</p>
+                </div>
+                <div class="data-card">
+                    <h3 class="card-title">Granularity</h3>
+                    <p class="card-value">Hourly</p>
+                    <p class="card-subtitle">26,280 records</p>
+                </div>
+                <div class="data-card">
+                    <h3 class="card-title">Features</h3>
+                    <p class="card-value">9 Columns</p>
+                    <p class="card-subtitle">Weather & time data</p>
+                </div>
+            </div>
+            <div class="data-card">
+                <h3 class="card-title">Feature List</h3>
+                <ul class="feature-list">
+                    <li>Datetime - Timestamp of measurement</li>
+                    <li>Year - Year of measurement</li>
+                    <li>Month - Month of measurement</li>
+                    <li>Day - Day of measurement</li>
+                    <li>Hour - Hour of measurement</li>
+                    <li>Temperature - Ambient temperature in Celsius</li>
+                    <li>Cloud Cover - Cloud coverage percentage</li>
+                    <li>Solar Irradiance - Solar radiation in W/m²</li>
+                    <li>Humidity - Relative humidity percentage</li>
+                </ul>
+            </div>
+            <div class="data-card">
+                <h3 class="card-title">Data Preview</h3>
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Datetime</th>
+                                <th>Temperature</th>
+                                <th>Cloud Cover</th>
+                                <th>Solar Irradiance</th>
+                                <th>Humidity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2021-01-01 00:00</td>
+                                <td>12.5°C</td>
+                                <td>53.9%</td>
+                                <td>0.0 W/m²</td>
+                                <td>89.9%</td>
+                            </tr>
+                            <tr>
+                                <td>2021-01-01 01:00</td>
+                                <td>11.8°C</td>
+                                <td>47.9%</td>
+                                <td>0.0 W/m²</td>
+                                <td>95.0%</td>
+                            </tr>
+                            <tr>
+                                <td>2021-01-01 02:00</td>
+                                <td>10.2°C</td>
+                                <td>41.1%</td>
+                                <td>0.0 W/m²</td>
+                                <td>74.5%</td>
+                            </tr>
+                            <tr>
+                                <td>2021-01-01 03:00</td>
+                                <td>9.5°C</td>
+                                <td>45.1%</td>
+                                <td>0.0 W/m²</td>
+                                <td>89.3%</td>
+                            </tr>
+                            <tr>
+                                <td>2021-01-01 04:00</td>
+                                <td>8.9°C</td>
+                                <td>35.9%</td>
+                                <td>0.0 W/m²</td>
+                                <td>72.3%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analysis Section -->
+    <section id="analysis" class="section">
+        <div class="container">
+            <h2 class="section-title">Data Analysis</h2>
+            
+            <!-- Weather Impact Analysis -->
+            <div class="analysis-subsection">
+                <h3 class="subsection-title">Weather Impact Analysis</h3>
+                
+                <div class="chart-single">
+                    <div class="chart-card">
+                        <img src="chart_1_cloud_irradiance.png" alt="Cloud Cover vs Solar Irradiance" class="chart-image">
+                        <p class="chart-caption">Increasing cloud cover is associated with reduced solar irradiance.</p>
+                    </div>
+                </div>
+                
+                <div class="chart-single">
+                    <div class="chart-card">
+                        <img src="chart_4_cloud_impact.png" alt="Cloud Cover Impact Analysis" class="chart-image">
+                        <p class="chart-caption">Solar irradiance significantly decreases as cloud cover increases across different ranges.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Temporal Patterns -->
+            <div class="analysis-subsection">
+                <h3 class="subsection-title">Temporal Patterns</h3>
+                
+                <div class="chart-single">
+                    <div class="chart-card">
+                        <img src="chart_2_monthly_irradiance.png" alt="Monthly Average Solar Irradiance" class="chart-image">
+                        <p class="chart-caption">Solar irradiance peaks during summer months and decreases in winter.</p>
+                    </div>
+                </div>
+                
+                <div class="chart-single">
+                    <div class="chart-card">
+                        <img src="chart_3_heatmap.png" alt="Solar Irradiance Heatmap" class="chart-image">
+                        <p class="chart-caption">Heatmap reveals solar irradiance patterns across hours and months showing peak generation periods.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Solar Energy Potential -->
+            <div class="analysis-subsection">
+                <h3 class="subsection-title">Solar Energy Potential</h3>
+                
+                <div class="chart-single">
+                    <div class="chart-card">
+                        <img src="chart_5_seasonal.png" alt="Seasonal Solar Irradiance" class="chart-image">
+                        <p class="chart-caption">Fall season shows highest average solar irradiance followed by summer and spring.</p>
+                    </div>
+                </div>
+                
+                <div class="chart-single">
+                    <div class="chart-card">
+                        <img src="chart_6_peak_hours.png" alt="Peak Solar Hours" class="chart-image">
+                        <p class="chart-caption">Solar irradiance increases through the morning, peaks around midday, and gradually decreases toward evening.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section id="insights" class="section gray-section">
+        <div class="container">
+            <h2 class="section-title">Key Insights</h2>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <h3 class="insight-title">Seasonal Patterns</h3>
+                    <p class="insight-text">Temperature exhibits clear seasonal variation with summer averages reaching 30°C and winter averages dropping to 10°C. This seasonal trend directly influences solar energy availability throughout the year.</p>
+                </div>
+                <div class="insight-card">
+                    <h3 class="insight-title">Solar Irradiance</h3>
+                    <p class="insight-text">Solar irradiance remains zero during night hours and peaks during daytime, reaching maximum values near 1000 W/m². Peak generation occurs between 12 PM and 2 PM daily.</p>
+                </div>
+                <div class="insight-card">
+                    <h3 class="insight-title">Cloud Cover Impact</h3>
+                    <p class="insight-text">High cloud cover above 80% significantly reduces solar irradiance to an average of 17 W/m². Cloud conditions are a critical factor affecting solar energy availability and system performance.</p>
+                </div>
+                <div class="insight-card">
+                    <h3 class="insight-title">Clear Sky Conditions</h3>
+                    <p class="insight-text">Low cloud cover below 20% results in higher solar irradiance averaging 237 W/m². Clear sky conditions provide optimal circumstances for maximum solar energy capture and generation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prediction Section -->
+    <section id="prediction" class="section">
+        <div class="container">
+            <h2 class="section-title">Prediction</h2>
+            
+            <!-- Live Prediction Tool -->
+            <div class="data-card" style="background: #ffffff; color: #1d1d1f; max-width: 800px; margin: 0 auto;">
+                <h3 class="card-title" style="text-align: center; font-size: 40px; margin-bottom: 12px;">Solar Irradiance Prediction</h3>
+                <p class="card-text" style="text-align: center; color: #6e6e73; margin-bottom: 48px; font-size: 19px;">Enter weather conditions to get real-time predictions.</p>
+                
+                <form id="predictionForm" style="display: flex; flex-direction: column; gap: 24px;">
+                    <div class="form-group">
+                        <label for="temperature" style="display: block; margin-bottom: 8px; font-weight: 500; font-size: 14px; color: #6e6e73;">Temperature</label>
+                        <div style="position: relative;">
+                            <input type="number" id="temperature" name="temperature" step="0.1" min="-10" max="50" value="25" required
+                                   style="width: 100%; padding: 16px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 12px; font-size: 17px; transition: all 0.3s; background: #f5f5f7;">
+                            <span style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); color: #6e6e73; font-size: 17px;">°C</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cloud_cover" style="display: block; margin-bottom: 8px; font-weight: 500; font-size: 14px; color: #6e6e73;">Cloud Cover</label>
+                        <div style="position: relative;">
+                            <input type="number" id="cloud_cover" name="cloud_cover" step="0.1" min="0" max="100" value="30" required
+                                   style="width: 100%; padding: 16px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 12px; font-size: 17px; transition: all 0.3s; background: #f5f5f7;">
+                            <span style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); color: #6e6e73; font-size: 17px;">%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="humidity" style="display: block; margin-bottom: 8px; font-weight: 500; font-size: 14px; color: #6e6e73;">Humidity</label>
+                        <select id="humidity" name="humidity" required
+                                style="width: 100%; padding: 16px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 12px; font-size: 17px; transition: all 0.3s; background: #f5f5f7; cursor: pointer; appearance: none; background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width=\'14\' height=\'8\' viewBox=\'0 0 14 8\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3e%3cpath d=\'M1 1L7 7L13 1\' stroke=\'%236e6e73\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/%3e%3c/svg%3e'); background-repeat: no-repeat; background-position: right 16px center;">
+                            <option value="20">Very Low (20%)</option>
+                            <option value="30">Low (30%)</option>
+                            <option value="40">Moderate-Low (40%)</option>
+                            <option value="50">Moderate (50%)</option>
+                            <option value="60" selected>Moderate-High (60%)</option>
+                            <option value="70">High (70%)</option>
+                            <option value="80">Very High (80%)</option>
+                            <option value="90">Extremely High (90%)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="hour" style="display: block; margin-bottom: 8px; font-weight: 500; font-size: 14px; color: #6e6e73;">Time of Day</label>
+                        <select id="hour" name="hour" required
+                                style="width: 100%; padding: 16px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 12px; font-size: 17px; transition: all 0.3s; background: #f5f5f7; cursor: pointer; appearance: none; background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width=\'14\' height=\'8\' viewBox=\'0 0 14 8\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3e%3cpath d=\'M1 1L7 7L13 1\' stroke=\'%236e6e73\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/%3e%3c/svg%3e'); background-repeat: no-repeat; background-position: right 16px center;">
+                            <option value="0">12:00 AM (Midnight)</option>
+                            <option value="1">1:00 AM</option>
+                            <option value="2">2:00 AM</option>
+                            <option value="3">3:00 AM</option>
+                            <option value="4">4:00 AM</option>
+                            <option value="5">5:00 AM</option>
+                            <option value="6">6:00 AM</option>
+                            <option value="7">7:00 AM</option>
+                            <option value="8">8:00 AM</option>
+                            <option value="9">9:00 AM</option>
+                            <option value="10">10:00 AM</option>
+                            <option value="11">11:00 AM</option>
+                            <option value="12" selected>12:00 PM (Noon)</option>
+                            <option value="13">1:00 PM</option>
+                            <option value="14">2:00 PM</option>
+                            <option value="15">3:00 PM</option>
+                            <option value="16">4:00 PM</option>
+                            <option value="17">5:00 PM</option>
+                            <option value="18">6:00 PM</option>
+                            <option value="19">7:00 PM</option>
+                            <option value="20">8:00 PM</option>
+                            <option value="21">9:00 PM</option>
+                            <option value="22">10:00 PM</option>
+                            <option value="23">11:00 PM</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="month" style="display: block; margin-bottom: 8px; font-weight: 500; font-size: 14px; color: #6e6e73;">Month</label>
+                        <select id="month" name="month" required
+                                style="width: 100%; padding: 16px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 12px; font-size: 17px; transition: all 0.3s; background: #f5f5f7; cursor: pointer; appearance: none; background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width=\'14\' height=\'8\' viewBox=\'0 0 14 8\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3e%3cpath d=\'M1 1L7 7L13 1\' stroke=\'%236e6e73\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/%3e%3c/svg%3e'); background-repeat: no-repeat; background-position: right 16px center;">
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6" selected>June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" id="predictBtn"
+                            style="width: 100%; padding: 18px; background: #0071e3; color: white; border: none; border-radius: 12px; font-size: 17px; font-weight: 500; cursor: pointer; transition: all 0.3s; margin-top: 12px;">
+                        Predict Solar Irradiance
+                    </button>
+                </form>
+                
+                <div id="predictionResult" style="margin-top: 40px; padding: 32px; background: #f5f5f7; border-radius: 18px; display: none;">
+                    <h4 style="font-size: 14px; margin-bottom: 8px; color: #6e6e73; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Predicted Solar Irradiance</h4>
+                    <div id="resultContent" style="font-size: 56px; font-weight: 600; color: #1d1d1f; line-height: 1.07143; letter-spacing: -0.005em;"></div>
+                    <div id="resultDetails" style="margin-top: 12px; font-size: 17px; color: #6e6e73; line-height: 1.47059;"></div>
+                </div>
+                
+                <div id="predictionError" style="margin-top: 24px; padding: 20px; background: #fff3f3; border: 1px solid #ffcccc; border-radius: 12px; display: none; color: #d32f2f;">
+                    <strong style="font-weight: 600;">Error:</strong> <span id="errorMessage"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section id="summary" class="section">
+        <div class="container">
+            <h2 class="section-title">Summary</h2>
+            <div class="summary-card">
+                <h3 class="card-title">Key Outcomes</h3>
+                <ul class="summary-list">
+                    <li>Seasonal patterns demonstrate clear temperature variations with summer averages reaching 30°C and winter averages dropping to 10°C, directly influencing solar energy availability throughout the year</li>
+                    <li>Solar irradiance exhibits distinct day-night behavior with zero values during night hours and peak generation between 12 PM and 2 PM, reaching maximum values near 1000 W/m²</li>
+                    <li>Cloud cover significantly impacts solar availability, with high cloud conditions (above 80%) reducing irradiance to 17 W/m² while clear sky conditions (below 20% cloud cover) enable optimal generation at 237 W/m²</li>
+                    <li>Heatmap analysis reveals consistent solar generation patterns across months with peak intensity during fall and summer seasons</li>
+                </ul>
+            </div>
+            <div class="summary-card">
+                <h3 class="card-title">Data Confidence</h3>
+                <p class="card-text">The dataset exhibits realistic behavior with well-structured patterns that align with expected solar energy characteristics. Temporal trends, seasonal variations, and weather impact correlations demonstrate consistency suitable for operational decision-making and strategic planning.</p>
+            </div>
+            <div class="summary-card">
+                <h3 class="card-title">Foundation for Advanced Analytics</h3>
+                <p class="card-text">This analysis establishes a comprehensive foundation for advanced analytics initiatives. The structured approach to data exploration and pattern identification provides a reliable basis for future analytical work and strategic decision support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Intelligent Solar Energy Analytics & Prediction System</p>
+            <p class="footer-text">Emmvee Solar Systems Pvt Ltd</p>
+        </div>
+    </footer>
+</body>
+</html>
